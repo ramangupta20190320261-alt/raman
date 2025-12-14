@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilory;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 85%;
+    width: 100%;
+    background-color: #111;
+    /*background-image: url("https://static.vecteezy.com/system/resources/thumbnails/041/390/430/small_2x/ai-generated-abstract-musical-notes-with-sparkling-bokeh-background-photo.jpg");
+    background-size: cover;
+    background-position: top;*/
+    display:flex;
+    padding: 2vw 5vw;
+    gap: 2vw;
+}
+#logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1px 2px;
+}
+
+#logo img {
+    height: 120vh;
+    width: auto;
+}
+
+#left{
+    height: 100%;
+    width:65%;
+    background-color: #333;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/041/390/430/small_2x/ai-generated-abstract-musical-notes-with-sparkling-bokeh-background-photo.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#right{
+    height: 100%;
+    width:45%;
+   /* background-color: aliceblue;*/
+    padding:0 1vw;
+    flex-direction: column;
+}
+#right h3{
+    font-size: 30px;
+}
+#all-songs{
+    /*background-color: red;*/
+    height: 85%;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.song-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #5a5a5a;
+    padding: 3px 2px;
+    margin-top: 25px;  
+}
+.song-card:hover{
+    background-color: #444;
+    background-size: cover;
+}
+.song-card:nth-last-child(1){
+   border-bottom: 1px solid #5a5a5a;
+}
+.song-card .part1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    pointer-events: none;
+}
+.song-card img{
+    height: 62px;
+    width: 100px;
+    margin-right: 20px;
+}
+.song-card h2{
+    font-size: 22px;
+    font-weight: 400;
+}
+.song-card h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#player{
+    height: 15%;
+    width: 100%;
+    background-color: #000;
+    /*background-image: url("https://static.vecteezy.com/system/resources/thumbnails/041/390/430/small_2x/ai-generated-abstract-musical-notes-with-sparkling-bokeh-background-photo.jpg");
+    background-size: cover;
+    background-position: top;
+    opacity: 0.9;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+} 
+#player h3{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#player h3 i{
+    font-size: 24px;
+}
+#player h3:active{
+    scale: 0.9;
+}

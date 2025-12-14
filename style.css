@@ -1,0 +1,42 @@
+#box{
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+h1{
+    height: 100px;
+    width: 200px;
+    color:lightgreen  ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(127, 225, 245);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#child1{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+#child2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 0, 8);
+}
+#child3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(45, 163, 135);
+}

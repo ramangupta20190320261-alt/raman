@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<style>
+ body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRYNBQNWfUoCq_aKW56Hi9o5KiSQjaNzsJFA&s');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity:1;
+  }
+h2 {
+    font-family: 'Courier New', monospace;
+    font-size: 50px;
+}
+h3 {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+}
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 30px;
+}
+form {
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+span.a {
+  display: inline; /* the default for span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;  
+  background-color: yellow; 
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+</style>
+<h2 style="text-decoration:underline;"><center>INTER IIIT</center></h2>
+<p>GET READY FOR SHOWING YOUR<span class="a"> SKILLS AND TALENT</span> IN SPORTS WORLD.</p>
+
+<form>
+
+ <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+  <label for="DOB">DOB:</label><br>
+  <input type="date"><br>
+ <label for="email address">Email Address:</label><br>
+  <input type="text" id="email address" name="email address" value="UI**CS/ECE**@iiitsurat.ac.in"><br>
+  <label for="MOBILE NO">Mobile no:</label><br>
+  <input type="text" id="MOBILE NO" name="MOBILE NO" value=""><br><br>
+
+  <input type="radio" id="CRICKET" name="fav_sport" value="CRICKET" onclick="toggleCheckboxes('CRICKET')">
+  <label style="color:black;" for="CRICKET">CRICKET</label><br>
+ 
+  <input type="radio" id="VOLLEYBALL" name="fav_sport" value="VOLLEYBALL" onclick="toggleCheckboxes('VOLLEYBALL')">
+  <label style="color:black;" for="VOLLEYBALL">VOLLEYBALL</label><br>
+ 
+  <input type="radio" id="FOOTBALL" name="fav_sport" value="FOOTBALL" onclick="toggleCheckboxes('FOOTBALL')">
+  <label style="color:black;" for="FOOTBALL">FOOTBALL</label><br>
+ 
+  <input type="radio" id="BADMINTON" name="fav_sport" value="BADMINTON" onclick="toggleCheckboxes('BADMINTON')">
+  <label style="color:black;" for="BADMINTON">BADMINTON</label><br>
+ 
+  <input type="radio" id="KABADDI" name="fav_sport" value="KABADDI" onclick="toggleCheckboxes('KABADDI')">
+  <label style="color:black;" for="KABADDI">KABADDI</label><br>
+ 
+  <input type="radio" id="KHO-KHO" name="fav_sport" value="KHO-KHO" onclick="toggleCheckboxes('KHO-KHO')">
+  <label style="color:black;" for="KHO-KHO">KHO-KHO</label><br>
+
+ 
+  <div id="cricket-levels" style="display:none;">
+    <input type="checkbox" name="cricket_level" value="ZONAL LEVEL">
+    <label for="ZONAL LEVEL"> ZONAL LEVEL</label><br>
+    <input type="checkbox" name="cricket_level" value="DISTRICT LEVEL">
+    <label for="DISTRICT LEVEL"> DISTRICT LEVEL</label><br>
+    <input type="checkbox" name="cricket_level" value="STATE LEVEL">
+    <label for="STATE LEVEL"> STATE LEVEL</label><br>
+  </div>
+
+ 
+  <div id="volleyball-levels" style="display:none;">
+    <input type="checkbox" name="volleyball_level" value="ZONAL LEVEL">
+    <label for="ZONAL LEVEL"> ZONAL LEVEL</label><br>
+    <input type="checkbox" name="volleyball_level" value="DISTRICT LEVEL">
+    <label for="DISTRICT LEVEL"> DISTRICT LEVEL</label><br>
+    <input type="checkbox" name="volleyball_level" value="STATE LEVEL">
+    <label for="STATE LEVEL"> STATE LEVEL</label><br>
+  </div>
+  <div id="football-levels" style="display:none;">
+    <input type="checkbox" name="football_level" value="ZONAL LEVEL">
+    <label for="ZONAL LEVEL"> ZONAL LEVEL</label><br>
+    <input type="checkbox" name="football_level" value="DISTRICT LEVEL">
+    <label for="DISTRICT LEVEL"> DISTRICT LEVEL</label><br>
+    <input type="checkbox" name="football_level" value="STATE LEVEL">
+    <label for="STATE LEVEL"> STATE LEVEL</label><br>
+  </div>
+  <div id="badminton-levels" style="display:none;">
+    <input type="checkbox" name="badminton_level" value="ZONAL LEVEL">
+    <label for="ZONAL LEVEL"> ZONAL LEVEL</label><br>
+    <input type="checkbox" name="badminton_level" value="DISTRICT LEVEL">
+    <label for="DISTRICT LEVEL"> DISTRICT LEVEL</label><br>
+    <input type="checkbox" name="badminton_level" value="STATE LEVEL">
+    <label for="STATE LEVEL"> STATE LEVEL</label><br>
+  </div>
+  <div id="kabaddi-levels" style="display:none;">
+    <input type="checkbox" name="kabaddi_level" value="ZONAL LEVEL">
+    <label for="ZONAL LEVEL"> ZONAL LEVEL</label><br>
+    <input type="checkbox" name="kabaddi_level" value="DISTRICT LEVEL">
+    <label for="DISTRICT LEVEL"> DISTRICT LEVEL</label><br>
+    <input type="checkbox" name="kabaddi_level" value="STATE LEVEL">
+    <label for="STATE LEVEL"> STATE LEVEL</label><br>
+  </div>
+  <div id="kho-kho-levels" style="display:none;">
+    <input type="checkbox" name="kho-kho_level" value="ZONAL LEVEL">
+    <label for="ZONAL LEVEL"> ZONAL LEVEL</label><br>
+    <input type="checkbox" name="kho-kho_level" value="DISTRICT LEVEL">
+    <label for="DISTRICT LEVEL"> DISTRICT LEVEL</label><br>
+    <input type="checkbox" name="kho-kho_level" value="STATE LEVEL">
+    <label for="STATE LEVEL"> STATE LEVEL</label><br>
+  </div>
+<br> <label for="MAX TIME">Timing of practice:</label><br>
+<input type="time"><br><br><br>
+<textarea name="message" style="width:400px; height:200px;">
+  YOUR REQUIREMENT FOR YOUR SPORT.
+  </textarea><br>
+<br><br><br>
+<h3 style="text-decoration:underline;">IF YOU DON'T PALY  MUCH BUT YOU ARE INTERESTED IN SPORT THEN, FOR GETTING SOME BASIC KNOWLEDGE ABOUT YOUR SPORT, JUST CLICK ON NAME:</h2>
+<ul>
+    <li><a href="https://en.wikipedia.org/wiki/Cricket" target="_blank">CRICKET</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Football" target="_blank">VOLLEYBALL</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Volleyball" target="_blank">FOOTBALL</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Badminton" target="_blank">BADMINTON</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Kabaddi" target="_blank">KABADDI</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Kho_kho" target="_blank">KHO KHO</a></li>
+  </ul>
+  <br>
+<input type="submit" value="Submit">
+</form>
+<script>
+  function toggleCheckboxes(sport) {
+    var sportsLevels = document.querySelectorAll("[id$='-levels']");
+    sportsLevels.forEach(function(levelDiv) {
+      levelDiv.style.display = "none";
+    });
+    var selectedSport = document.getElementById(sport.toLowerCase() + "-levels");
+    if (selectedSport) {
+      selectedSport.style.display = "block";
+    }
+  }  
+</script>
+<p><b>SOME GLIMPSE OF INTER IIIT-2024 HOSTED BY IIIT ALLAHBAD</b></p>
+<embed type="video/webm" src="webpagevideo.mp4" width="400" height="300">
+    <br>
+    <p><b></b>ENERGETIC AUDIO OF SPORTS</b></p>
+    <audio controls>
+        <source src="webpageaudio.mp3" type="audio/ogg">
+        <source src="webpageaudio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+</body>
+</html>
+
